@@ -11,12 +11,17 @@ urllib3.disable_warnings()
 username = 'admin'
 password = 'admin'
 
+credentials = f"{username}:{password}"
+
+encoded_credential = base64.b64encode(credentials.encode()).decode()
+
 # Get CoSpaces
 
 url = "https://192.168.91.152:443/api/v1/coSpaces/"
 
 headers = {
-  'Content-Type': 'application/json'
+  'Content-Type': 'application/json',
+  'Authorization': encoded_credential
 }
 
 response = requests.get(url,
