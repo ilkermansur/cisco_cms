@@ -28,7 +28,7 @@ def get_cospaces_list(
 
   == Parameters ==
 
-  None <br>
+  None
 
   """
 
@@ -87,7 +87,7 @@ def delete_cospace (
 
   == Parameters ==
 
-  coSpaceID (mandatory) <br>
+  coSpaceID (mandatory)
 
   """
 
@@ -126,10 +126,10 @@ def create_cospace (
   
   == Parameters ==
 
-  name <br>
-  uri <br>
-  callId (integer) <br>
-  secondaryUri <br>
+  name
+  uri 
+  callId (integer)
+  secondaryUri
 
   """
 
@@ -172,11 +172,11 @@ This Python function creates a `Access Method`
 
 == Parameters ==
 
-coSpaceId (mandatory)<br>
-uri <br>
-callID (integer)<br>
-accessMethodName <br>
-callLegProfile <br>
+coSpaceId (mandatory)
+uri
+callID (integer)
+accessMethodName
+callLegProfile
 
 """
 
@@ -231,7 +231,7 @@ def get_access_methods (
 
   == Parameters ==
 
-  None <br>
+  None
 
   """
   credentials = f"{username}:{password}"
@@ -297,7 +297,7 @@ def delete_access_methods (
     == Parameters ==
 
     cospaceid (mandatory)<br>
-    access_method_id (mandatory) <br>
+    access_method_id (mandatory)
 
 
   """
